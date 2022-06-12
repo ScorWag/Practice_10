@@ -10,10 +10,12 @@ public class MovieManager {
 
     public MovieManager() {
     }
+
     public MovieManager(MovieRepository repository, int maxLength) {
         this.repository = repository;
         this.maxLength = maxLength;
     }
+
     public MovieManager(MovieRepository repository) {
         this.repository = repository;
     }
