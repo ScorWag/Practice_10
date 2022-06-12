@@ -10,7 +10,6 @@ public class MovieManagerFindLastTest {
     MovieManager managerFifteenLimit = new MovieManager(15);
 
     @Test
-
     void shouldFindLastDefaultWithElevenElements() {
 
         MovieItem movieFirst = new MovieItem(1, "Terminator", "Action");
@@ -40,11 +39,10 @@ public class MovieManagerFindLastTest {
         MovieItem[] actual = manager.findLast();
         MovieItem[] expected = {movieEleven, movieTen, movieNine, movieEight, movieSeven, movieSix, movieFive, movieFour, movieThird, movieSecond};
 
-        Assertions.assertArrayEquals (expected, actual);
+        Assertions.assertArrayEquals(expected, actual);
     }
 
     @Test
-
     void shouldFindLastDefaultWithNineElements() {
 
         MovieItem movieFirst = new MovieItem(1, "Terminator", "Action");
@@ -70,11 +68,10 @@ public class MovieManagerFindLastTest {
         MovieItem[] actual = manager.findLast();
         MovieItem[] expected = {movieNine, movieEight, movieSeven, movieSix, movieFive, movieFour, movieThird, movieSecond, movieFirst};
 
-        Assertions.assertArrayEquals (expected, actual);
+        Assertions.assertArrayEquals(expected, actual);
     }
 
     @Test
-
     void shouldFindLastDefaultWithTenElements() {
 
         MovieItem movieFirst = new MovieItem(1, "Terminator", "Action");
@@ -103,11 +100,10 @@ public class MovieManagerFindLastTest {
         MovieItem[] actual = manager.findLast();
         MovieItem[] expected = {movieTen, movieNine, movieEight, movieSeven, movieSix, movieFive, movieFour, movieThird, movieSecond, movieFirst};
 
-        Assertions.assertArrayEquals (expected, actual);
+        Assertions.assertArrayEquals(expected, actual);
     }
 
     @Test
-
     void shouldFindLastFiveLimitWithFiveElements() {
 
         MovieItem movieFirst = new MovieItem(1, "Terminator", "Action");
@@ -125,11 +121,10 @@ public class MovieManagerFindLastTest {
         MovieItem[] actual = managerFiveLimit.findLast();
         MovieItem[] expected = {movieFive, movieFour, movieThird, movieSecond, movieFirst};
 
-        Assertions.assertArrayEquals (expected, actual);
+        Assertions.assertArrayEquals(expected, actual);
     }
 
     @Test
-
     void shouldFindLastFiveLimitWithSixElements() {
 
         MovieItem movieFirst = new MovieItem(1, "Terminator", "Action");
@@ -149,11 +144,10 @@ public class MovieManagerFindLastTest {
         MovieItem[] actual = managerFiveLimit.findLast();
         MovieItem[] expected = {movieSix, movieFive, movieFour, movieThird, movieSecond};
 
-        Assertions.assertArrayEquals (expected, actual);
+        Assertions.assertArrayEquals(expected, actual);
     }
 
     @Test
-
     void shouldFindLastFiveLimitWithFourElements() {
 
         MovieItem movieFirst = new MovieItem(1, "Terminator", "Action");
@@ -169,11 +163,10 @@ public class MovieManagerFindLastTest {
         MovieItem[] actual = managerFiveLimit.findLast();
         MovieItem[] expected = {movieFour, movieThird, movieSecond, movieFirst};
 
-        Assertions.assertArrayEquals (expected, actual);
+        Assertions.assertArrayEquals(expected, actual);
     }
 
     @Test
-
     void shouldFindLastFifteenLimitWithSixteenElements() {
 
         MovieItem movieFirst = new MovieItem(1, "Terminator", "Action");
@@ -213,11 +206,10 @@ public class MovieManagerFindLastTest {
         MovieItem[] actual = managerFifteenLimit.findLast();
         MovieItem[] expected = {movieSixteen, movieFifteen, movieFourteen, movieThirteen, movieTwelve, movieEleven, movieTen, movieNine, movieEight, movieSeven, movieSix, movieFive, movieFour, movieThird, movieSecond};
 
-        Assertions.assertArrayEquals (expected, actual);
+        Assertions.assertArrayEquals(expected, actual);
     }
 
     @Test
-
     void shouldFindLastFifteenLimitWithFifteenElements() {
 
         MovieItem movieFirst = new MovieItem(1, "Terminator", "Action");
@@ -255,11 +247,10 @@ public class MovieManagerFindLastTest {
         MovieItem[] actual = managerFifteenLimit.findLast();
         MovieItem[] expected = {movieFifteen, movieFourteen, movieThirteen, movieTwelve, movieEleven, movieTen, movieNine, movieEight, movieSeven, movieSix, movieFive, movieFour, movieThird, movieSecond, movieFirst};
 
-        Assertions.assertArrayEquals (expected, actual);
+        Assertions.assertArrayEquals(expected, actual);
     }
 
     @Test
-
     void shouldFindLastFifteenLimitWithFourteenElements() {
 
         MovieItem movieFirst = new MovieItem(1, "Terminator", "Action");
@@ -295,39 +286,36 @@ public class MovieManagerFindLastTest {
         MovieItem[] actual = managerFifteenLimit.findLast();
         MovieItem[] expected = {movieFourteen, movieThirteen, movieTwelve, movieEleven, movieTen, movieNine, movieEight, movieSeven, movieSix, movieFive, movieFour, movieThird, movieSecond, movieFirst};
 
-        Assertions.assertArrayEquals (expected, actual);
+        Assertions.assertArrayEquals(expected, actual);
     }
 
     @Test
-
     void shouldFindLastDefaultWithoutElements() {
 
         MovieItem[] items = manager.findLast();
         int actual = items.length;
         int expected = 0;
 
-        Assertions.assertEquals (expected, actual);
+        Assertions.assertEquals(expected, actual);
     }
 
     @Test
-
     void shouldFindLastFiveLimitWithoutElements() {
 
         MovieItem[] items = managerFiveLimit.findLast();
         int actual = items.length;
         int expected = 0;
 
-        Assertions.assertEquals (expected, actual);
+        Assertions.assertEquals(expected, actual);
     }
 
     @Test
-
     void shouldFindLastFifteenLimitWithoutElements() {
 
         MovieItem[] items = managerFifteenLimit.findLast();
         int actual = items.length;
         int expected = 0;
 
-        Assertions.assertEquals (expected, actual);
+        Assertions.assertEquals(expected, actual);
     }
 }

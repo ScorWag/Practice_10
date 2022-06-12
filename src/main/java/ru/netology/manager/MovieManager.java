@@ -6,22 +6,23 @@ public class MovieManager {
     private MovieItem[] movies = new MovieItem[0];
     private int maxLength = 10;
 
-
     public MovieManager() {
-        }
+    }
 
     public MovieManager(int maxLength) {
         this.maxLength = maxLength;
-        }
-    public void add(MovieItem item) {
+    }
 
+    public void add(MovieItem item) {
         MovieItem[] tmp = new MovieItem[movies.length + 1];
+
         for (int i = 0; i < movies.length; i++) {
             tmp[i] = movies[i];
         }
         tmp[tmp.length - 1] = item;
         movies = tmp;
     }
+
     public MovieItem[] findAll() {
         return movies;
     }
@@ -31,8 +32,7 @@ public class MovieManager {
 
         if (movies.length >= maxLength) {
             resultLength = maxLength;
-            }
-        else {
+        } else {
             resultLength = movies.length;
         }
         MovieItem[] items = findAll();
