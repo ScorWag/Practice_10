@@ -8,9 +8,6 @@ public class MovieManager {
     private MovieRepository repository;
     private int maxLength = 10;
 
-    public MovieManager() {
-    }
-
     public MovieManager(MovieRepository repository, int maxLength) {
         this.repository = repository;
         this.maxLength = maxLength;
